@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        
+        <!-- Standard Meta -->
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Site Properties -->
+        <title>Sativa - Hotel &amp; Resort HTML Template</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+
+        <!-- Google Fonts -->
+       	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+       	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="stati/css/uikit.min.css" />
+        <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="static/css/tiny-date-picker.min.css" />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <link rel="stylesheet" href="static/css/media-query.css" />
+        <link rel="stylesheet" href="static/css/bootstrap.css" />
+         <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+
+
+    </head>
+
+
+
+<body >
+<style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .banner {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+      }
+
+      .menu {
+        display: none;
+        padding: 10px;
+        background-color: #2c3e50;
+      }
+
+      .menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    }
+
+ ul.nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+
+        ul.nav li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul.nav li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul.nav li:hover {
+            background-color: #555;
+        }
+
+        /* Drop-down menu styling */
+        ul.nav ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+        }
+
+        ul.nav li:hover > ul {
+            display: block;
+        }
+
+        ul.nav ul li {
+            display: block;
+        }
+
+        ul.nav ul li a {
+            padding: 10px 20px;
+        }
+</style>
+<div class="banner">
+  
+ <img src="static/images/spa-service-3.jpg" >
+
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()"><h1>☰ Menu</h1></div>
+<div class="menu" id="menu">
+   <ul class="nav">
+        <li><a href="#"><h1>Home</h1></a></li>
+        <li>
+            <a href="#"><h1>Services</h1></a>
+            <ul>
+                <li><a href="#"><h1>Web Design</h1></a></li>
+                <li><a href="#"><h1>Graphic Design<h1></a></li>
+                <li><a href="#"><h1>SEO</h1></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><h1>About Us</h1></a>
+            <ul>
+                <li><a href="#"><h1>Our Team</h1></a></li>
+                <li><a href="#"><h1>History</h1></a></li>
+            </ul>
+        </li>
+        <li><a href="#"><h1>Contact</h1></a></li>
+    </ul>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+
+<script>
+   function profiler(){
+      window.open("http://localhost:8080/login")
+   }
+</script>
+
+
+<h3>{{!this_date}}</h3>
+<div id ="app"></div>
+
+<table><tr>
+ 
+ <td style ="background-color:white;color:black;"><h3><center style ="text-align:right;">Welcome, <u>{{!username}}</u></center></h3>
+ 
+<div><img src ="{{!UPLOAD_DIR}}/{{!this_pic}}"></div>
+<hr>
+
+
+  </div>
+
+</tr>
+</table>
+
+</div></div>
+<table border="1"  style =" border-color:white;">
+<tr>
+<td style ="background-color:white;color:black;"><h3></h3><td>
+<td style ="background-color:white;color:black;"><h3></h3><td>
+ <td  style ="background-color:white;color:white;" >||||<td>
+
+
+</tr>
+</table>
+
+
+
+<nav class ="menu">
+ 
+</nav>
+    <script type="text/babel">
+       
+        class App extends React.Component {
+              render() {
+                  return <h1>Hello from our  React app</h1>
+             }
+       }
+        var mount = document.querySelector('#app');
+        ReactDOM.render(<App/>, mount);
+ </script>
+<script>
+   function register(){
+      window.open("http://localhost:8080/register")
+   }
+
+</script>
+
+
+
+  
+    	
+		
+
+
+
+<center><div class="jumbotron">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+ <div class="carousel-indicators">
+ <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+ <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+ <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+ </div>
+ <div class="carousel-inner">
+ <div class="carousel-item active">
+ <img src="static/images/spa.jpg" class="d-block w-50" alt="...">
+ </div>
+ <div class="carousel-item">
+ <img src="static/images/spa-service-2.jpg" class="d-block w-50" alt="...">
+ </div>
+ <div class="carousel-item">
+ <img src="static/images/spa-service-3.jpg" class="d-block w-50" alt="...">
+ </div>
+ </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ <span class="visually-hidden">Previous</span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+ <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ <span class="visually-hidden">Next</span>
+ </button>
+</div>
+ <div class="container">
+ <h1 style = "background-color:white;color:black;">LEARNING HUB</h1>
+ <p> to the Universe of Learning</p>
+ 
+ <p> logged in  at {{!this_hour}}:{{!this_min}}:{{!this_sec}}</p>
+<p>
+  <button class ="btn btn-primary btn-lg" onclick ="profiler()";>start profiling</button>
+ </p>
+ </div>
+</div>
+
+</center>
+
+
+
+
+
+
+
+
+		  
+
+
+    	<!-- Javascript -->
+    	<script src="/static/js/jquery.js"></script>
+        <script src="static/js/uikit.min.js"></script>
+        <script src="static/js/uikit-icons.min.js"></script>
+        <script type="static/text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBGb3xrNtz335X4G2KfoOXb-XuIyHAzlVo"></script>
+        <script src="static/js/jquery.gmap.min.js"></script>
+        <script src="static/js/jquery.parallax.min.js"></script>
+        <script src="static/js/tiny-date-picker.min.js"></script>
+        <script src="static/js/date-config.js"></script>
+        <script src="static/js/template-config.js"></script>
+       <script src="static/js/bootstrap.js"></script>
+       <script src="static/js/bootstrap.min.js"></script>
+      <script src="static/js/bootstrap.bundle.js"></script>
+       <script src="static/js/bootstrap.bundle.min.js"></script>
+       <script src="static/js/babel.min.js"></script>
+       <script src="static/js/react.development.js"></script>
+     <script src="static/js/react-dom.developement.js"></script>
+      <script src="static/js/react-dom.production.min.js"></script>
+     <script src="static/js/react.production.min.js"></script>
+     <script src="static/js/jquery.min.js"></script>
+    </body>
+
+
+</html>
